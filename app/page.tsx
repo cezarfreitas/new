@@ -1,3 +1,6 @@
+import { NewsletterForm } from "@/components/newsletter-form"
+import { ContactForm } from "@/components/contact-form"
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
@@ -71,6 +74,12 @@ export default function Home() {
               <span className="text-gray-700">VPS Otimizado</span>
             </div>
           </div>
+        </div>
+
+        {/* Formulários */}
+        <div className="mt-16 grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <NewsletterForm />
+          <ContactForm />
         </div>
       </div>
     </div>
